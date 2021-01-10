@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Music Bot",
+  "main": "= index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dehu",
+  "license": "ISC",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^12.5.1",
+    "node-gyp": "^7.1.2",
+    "node-opus": "^0.3.3",
+    "rebuild": "^0.1.2",
+    "winston": "^3.3.3",
+    "ytdl-core": "^4.4.2",
+    "ytsearcher": "^1.2.3"
+  }
+}
