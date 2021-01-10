@@ -1,6 +1,7 @@
 {
-  "token"; "Nzk3NzgwMzg0ODUwMzc4NzYy.X_rc4Q.i5w-96Ao05RFNWIaWtL8zUk7LcY"
-  }
+    "prefix"; "!",
+    "token"; "Nzk3NzgwMzg0ODUwMzc4NzYy.X_rc4Q.ze0-2Kd4aixWPfRFOcmPn7CukGk"
+    }
 
 const { executionAsyncResource } = require('async_hooks');
 const Discord = require('discord.js');
@@ -9,7 +10,7 @@ const ytdl = require('ytdl-core');
 const { YTSearcher } = require('ytsearcher');
 
 const searcher = new YTSearcher({
-    key: "AIzaSyCTmqVdSHdTzOu9OpNS-USunk7fAICRcRk",
+    key: process.env.youtubeapi,
     revealed: true
 });
 
@@ -205,3 +206,4 @@ client.on("message", async(message) => {
     }
 })
 
+client.login(process.env.token)
